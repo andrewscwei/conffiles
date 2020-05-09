@@ -1,0 +1,62 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "name": "Run",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "sourceMaps": true,
+      "restart": true,
+      "port": 5858,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeExecutable": "${env:NVM_DIR}/nvm-exec",
+      "runtimeArgs": [
+        "node"
+      ],
+      "program": "${workspaceRoot}/node_modules/.bin/nodemon",
+      "args": [
+        "--exec",
+        "node -r ts-node/register -r dotenv/config --inspect-brk=5858",
+        "--verbose",
+        "--watch",
+        "src",
+        "--ext",
+        "ts,json",
+        "${workspaceRoot}/src/app.ts"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test",
+      "env": {
+        "NODE_ENV": "test",
+        "TS_NODE_FILES": "true"
+      },
+      "sourceMaps": true,
+      "internalConsoleOptions": "neverOpen",
+      "console": "integratedTerminal",
+      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "-r",
+        "ts-node/register",
+        "--reporter",
+        "spec",
+        "--timeout",
+        "0",
+        "--colors",
+        "--debug",
+        "--full-trace",
+        "--recursive",
+        "--bail",
+        "--exit",
+        "${workspaceRoot}/src/**/*.spec.ts"
+      ],
+    }
+  ]
+}
