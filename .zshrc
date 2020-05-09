@@ -100,6 +100,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vpm=". ~/.vpm/vpm.sh"
 
+alias captive="open /System/Library/CoreServices/Captive\ Network\ Assistant.app"
+
 # zsh-completions
 autoload -U compinit && compinit
 
@@ -118,3 +120,6 @@ export PATH=$PATH:/usr/local/miniconda3/bin
 
 # RabbitMQ
 export PATH=$PATH:/usr/local/sbin
+
+# Android Studio
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
