@@ -8,7 +8,7 @@ source .circleci/get_opts.sh
 
 NETLIFY_API=https://api.netlify.com/api/v1
 NETLIFY_SITE_ID=""
-GH_USER=${GH_USER:-$CIRCLE_PROJECT_USERNAME}
+GH_USER=${GH_USER:-$GITHUB_ACTOR}
 ORIGIN_URL=`git config --get remote.origin.url`
 PACKAGE_NAME=$(cat package.json | jq -r ".name")
 PACKAGE_VERSION=$(cat package.json | jq -r ".version")

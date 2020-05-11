@@ -53,12 +53,18 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      # - deploy:
-      #     name: Deploy to NPM
-      #     command: .circleci/deploy_to_npm.sh
-      # - deploy:
-      #     name: Deploy to GitHub Pages
-      #     command: .circleci/deploy_to_gh_pages.sh
+        # - deploy:
+        #     name: Deploy to NPM
+        #     command: .circleci/deploy_to_npm.sh
+        # - deploy:
+        #     name: Deploy to GitHub Pages
+        #     command: .circleci/deploy_to_gh_pages.sh
+        # - deploy:
+        #     name: Deploy to Netlify
+        #     command: ./.circleci/deploy_to_netlify.sh
+        # - deploy:
+        #     name: Deploy to Heroku
+        #     command: ./.circleci/deploy_to_heroku.sh
 
 workflows:
   version: 2.1
@@ -74,7 +80,6 @@ workflows:
             tags:
               only: /.*/
       - deploy:
-          context: npm_deployment
           requires: [test]
           filters:
             branches:

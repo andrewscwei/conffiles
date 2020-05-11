@@ -86,3 +86,12 @@ jobs:
       #     NPM_AUTH: ${{ secrets.NPM_AUTH }}
       # - name: Deploy to GitHub pages
       #   run: .github/workflows/deploy_to_gh_pages.sh
+      # - name: Deploy to Netlify
+      #   run: .github/workflows/deploy_to_netlify.sh
+      #   env:
+      #     NETLIFY_KEY: ${{ secrets.NETLIFY_KEY }}
+      # - name: Deploy to Heroku
+      #   run: .github/workflows/deploy_to_heroku.sh
+      #   env:
+      #     HEROKU_USER: ${{ secrets.HEROKU_USER }}
+      #     HEROKU_KEY: ${{ secrets.HEROKU_KEY }}
