@@ -15,7 +15,7 @@ PACKAGE_VERSION=$(cat package.json | jq -r ".version")
 PACKAGE_FILE=$PACKAGE_NAME-$PACKAGE_VERSION
 
 if [ -f .netlify ]; then
-  NETLIFY_SITE_ID=$(cat .circleci/netlify)
+  NETLIFY_SITE_ID=$(cat .netlify)
 
   echo "Existing site ID ($NETLIFY_SITE_ID) found in repo, verifying that site exists..."
   echo
