@@ -89,6 +89,12 @@
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "none"
+      }
+    ],
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/prefer-for-of": "error",
@@ -116,7 +122,7 @@
     "@typescript-eslint/unified-signatures": "error",
     "arrow-body-style": "error",
     "arrow-parens": [
-      "error",
+      "warn",
       "as-needed"
     ],
     "block-spacing": "error",
@@ -170,10 +176,7 @@
     "id-match": "error",
     "import/no-extraneous-dependencies": "off",
     "import/no-internal-modules": "off",
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": "off",
     "key-spacing": [
       "error",
       {
@@ -239,12 +242,7 @@
     "no-unneeded-ternary": "off",
     "no-unsafe-finally": "error",
     "no-unused-labels": "error",
-    "no-unused-vars": [
-      "warn",
-      {
-        "args": "none"
-      }
-    ],
+    "no-unused-vars": "off",
     "no-useless-escape": "warn",
     "no-var": "error",
     "no-void": "error",
@@ -273,10 +271,7 @@
     "prefer-const": "error",
     "prefer-object-spread": "error",
     "radix": "error",
-    "semi": [
-      "error",
-      "always"
-    ],
+    "semi": "off",
     "space-before-blocks": [
       "error",
       "always"
@@ -305,12 +300,9 @@
     "space-unary-ops": "error",
     "quote-props": [
       "error",
-      "consistent-as-needed"
+      "consistent"
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "quotes": "off",
     "use-isnan": "error",
     "valid-typeof": "off"
   }

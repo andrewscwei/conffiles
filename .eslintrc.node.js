@@ -113,7 +113,7 @@
     "space-unary-ops": "error",
     "quote-props": [
       "error",
-      "consistent-as-needed"
+      "consistent"
     ],
     "quotes": [
       "error",
