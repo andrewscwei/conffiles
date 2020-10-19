@@ -26,4 +26,8 @@ git add -fA
 git commit --allow-empty -m "[SKIP CI] $(git log -1 --pretty=%B)"
 git push -f $ORIGIN_URL gh-pages
 
-echo "Successfully published docs to GitHub Pages"
+if [ $? -ne 0 ]; then
+  exit 1
+else
+  echo "Successfully published docs to GitHub Pages"
+fi

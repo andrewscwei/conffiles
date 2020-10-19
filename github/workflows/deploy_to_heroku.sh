@@ -27,5 +27,9 @@ docker push registry.heroku.com/$APP_NAME/web:latest
 heroku container:login
 heroku container:release web --app=$APP_NAME
 
-echo
-echo "Successfuly deployed to Heroku"
+if [ $? -ne 0 ]; then
+  exit 1
+else
+  echo
+  echo "Successfuly deployed to Heroku"
+fi

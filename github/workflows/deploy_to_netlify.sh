@@ -8,7 +8,7 @@
 NETLIFY_API=https://api.netlify.com/api/v1
 NETLIFY_SITE_ID=""
 GH_USER=${GH_USER:-$GITHUB_ACTOR}
-ORIGIN_URL=`git config --get remote.origin.url`
+ORIGIN_URL="https://$GH_USER:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 BUILD_DIR=${BUILD_DIR:-build}
 PACKAGE_FILE="package.zip"
 
@@ -51,9 +51,13 @@ if [[ $NETLIFY_SITE_ID == "" ]]; then
   git commit -m "[SKIP CI] Adding generated netlify file"
   git push -f $ORIGIN_URL HEAD:master
 
-  echo
-  echo "Done! Your site URL is:"
-  echo $SITE_URL
+  if [ $? -ne 0 ]; then
+    exit 1
+  else
+    echo
+    echo "Done! Your site URL is:"
+    echo $SITE_URL
+  fi
 else
   echo "Deploying to site ${NETLIFY_SITE_ID}..."
   echo
