@@ -21,6 +21,7 @@ pids
 *.pid.*
 *.seed
 .cache
+.data
 
 # Compiled sources
 *.com

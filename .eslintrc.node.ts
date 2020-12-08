@@ -71,8 +71,7 @@
       "error",
       {
         "multiline": {
-          "delimiter": "semi",
-          "requireLast": true
+          "delimiter": "none"
         },
         "singleline": {
           "delimiter": "semi",
@@ -109,7 +108,7 @@
     ],
     "@typescript-eslint/semi": [
       "error",
-      "always"
+      "never"
     ],
     "@typescript-eslint/triple-slash-reference": [
       "error",
