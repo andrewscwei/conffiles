@@ -15,7 +15,7 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./build",
-    "pretty": false,
+    "pretty": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -23,8 +23,7 @@
     "sourceRoot": "/",
     "strict": true,
     "strictNullChecks": true,
-    "target": "es6",
-    "types": ["node"]
+    "target": "es6"
   },
   "include": [
     "src/**/*.ts"

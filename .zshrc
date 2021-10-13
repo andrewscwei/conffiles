@@ -45,7 +45,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output. You can set one of the optional
@@ -53,7 +53,7 @@ COMPLETION_WAITING_DOTS="true"
 #   "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications, see
 # 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -123,3 +123,18 @@ export PATH=$PATH:/usr/local/sbin
 
 # Android Studio
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+
+# Fastlane
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Python
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
+# Google Cloud SDK
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+# rbenv
+eval "$(rbenv init -)"

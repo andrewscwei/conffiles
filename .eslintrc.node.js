@@ -1,7 +1,11 @@
 {
-  "root": true,
+  "env": {
+    "browser": false,
+    "es6": false,
+    "node": true
+  },
   "extends": [
-    "eslint:recommended",
+    "eslint:recommended"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -12,11 +16,13 @@
       "legacyDecorators": true
     }
   },
-  "env": {
-    "es6": true,
-    "node": true
-  },
+  "root": true,
   "rules": {
+    "arrow-body-style": "error",
+    "arrow-parens": [
+      "warn",
+      "as-needed"
+    ],
     "block-spacing": "error",
     "brace-style": [
       "error",
@@ -25,7 +31,11 @@
         "allowSingleLine": true
       }
     ],
-    "comma-dangle": ["error", "always-multiline"],
+    "camelcase": "error",
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
     "comma-spacing": [
       "error",
       {
@@ -33,14 +43,38 @@
         "after": true
       }
     ],
+    "complexity": "off",
+    "constructor-super": "error",
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "eol-last": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
     "func-call-spacing": [
       "error",
       "never"
     ],
-    "indent": [
+    "guard-for-in": "error",
+    "id-blacklist": [
       "error",
-      2
+      "any",
+      "Number",
+      "number",
+      "String",
+      "string",
+      "Boolean",
+      "boolean",
+      "Undefined",
+      "undefined"
     ],
+    "id-match": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-internal-modules": "off",
+    "indent": "off",
     "key-spacing": [
       "error",
       {
@@ -60,27 +94,57 @@
       "error",
       "unix"
     ],
-    "no-cond-assign": "warn",
-    "no-console": "warn",
-    "no-duplicate-imports": "error",
-    "no-empty": "warn",
-    "no-lonely-if": "error",
-    "no-mixed-spaces-and-tabs": "error",
-    "no-multiple-empty-lines": "error",
-    "no-nested-ternary": "off",
     "max-depth": [
       "warn",
       6
     ],
+    "max-len": "off",
     "new-parens": "error",
-    "no-unneeded-ternary": "off",
-    "no-unused-vars": [
-      "warn",
+    "no-bitwise": "off",
+    "no-caller": "error",
+    "no-cond-assign": "warn",
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": "error",
+    "no-empty": [
+      "error",
       {
-        "args": "none"
+        "allowEmptyCatch": true
       }
     ],
+    "no-eval": "error",
+    "no-extra-bind": "error",
+    "no-fallthrough": "off",
+    "no-invalid-this": "off",
+    "no-lonely-if": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multiple-empty-lines": "error",
+    "no-nested-ternary": "off",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-redeclare": "error",
+    "no-return-await": "error",
+    "no-sequences": "error",
+    "no-shadow": [
+      "off",
+      {
+        "hoist": "all"
+      }
+    ],
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-undef-init": "error",
+    "no-underscore-dangle": "off",
+    "no-unneeded-ternary": "off",
+    "no-unsafe-finally": "error",
+    "no-unused-labels": "error",
+    "no-unused-vars": "off",
     "no-useless-escape": "warn",
+    "no-var": "error",
+    "no-void": "error",
     "no-whitespace-before-property": "error",
     "nonblock-statement-body-position": [
       "error",
@@ -90,6 +154,20 @@
       "error",
       "always"
     ],
+    "object-shorthand": "error",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "padding-line-between-statements": [
+      "off",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "prefer-const": "error",
     "semi": [
       "error",
       "always"
@@ -106,18 +184,26 @@
         "asyncArrow": "always"
       }
     ],
-    "spaced-comment": [
+    "space-in-parens": [
       "error",
-      "always"
+      "never"
     ],
     "space-unary-ops": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "/"
+        ]
+      }
+    ],
     "quote-props": [
       "error",
       "consistent"
     ],
-    "quotes": [
-      "error",
-      "single"
-    ]
+    "quotes": "off",
+    "use-isnan": "error",
+    "valid-typeof": "off"
   }
 }

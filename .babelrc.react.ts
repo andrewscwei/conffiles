@@ -2,8 +2,7 @@
   "env": {
     "development": {
       "plugins": [
-        "babel-plugin-styled-components",
-        "react-hot-loader/babel"
+        "babel-plugin-styled-components"
       ]
     }
   },
@@ -14,8 +13,7 @@
       {
         "targets": {
           "browsers": [
-            "last 2 versions",
-            "ie >= 11"
+            "last 2 versions"
           ]
         }
       }
@@ -26,7 +24,7 @@
   "plugins": [
     "@babel/plugin-transform-runtime",
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
-    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["@babel/plugin-proposal-class-properties"],
     ["babel-plugin-styled-components", { "displayName": false }]
   ]
 }
