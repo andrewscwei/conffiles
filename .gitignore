@@ -62,10 +62,11 @@ logs
 *.pem
 *.crt
 *.key
+*.p8
 .credentials
 .credentials.*
 .keystore
-gc_keys.json
+service-account.json
 secrets.json
 
 # Databases
@@ -174,5 +175,4 @@ _site
 .jekyll-metadata
 
 # Ruby
-.ruby-version
 .ruby-version
