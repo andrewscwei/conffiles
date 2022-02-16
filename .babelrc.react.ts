@@ -2,19 +2,16 @@
   "env": {
     "development": {
       "plugins": [
-        "babel-plugin-styled-components"
+        "babel-plugin-styled-components",
       ]
     }
   },
-  "retainLines": true,
   "presets": [
     [
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": [
-            "last 2 versions"
-          ]
+          "browsers": "last 2 versions"
         }
       }
     ],
