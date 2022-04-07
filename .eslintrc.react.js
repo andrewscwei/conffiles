@@ -2,7 +2,7 @@
   "env": {
     "browser": true,
     "es6": false,
-    "node": true
+    "node": false
   },
   "extends": [
     "eslint:recommended"
@@ -94,6 +94,10 @@
       "error",
       "unix"
     ],
+    "max-classes-per-file": [
+      "error",
+      1
+    ],
     "max-depth": [
       "warn",
       6
@@ -119,7 +123,11 @@
     "no-invalid-this": "off",
     "no-lonely-if": "error",
     "no-mixed-spaces-and-tabs": "error",
-    "no-multiple-empty-lines": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1 }
+    ],
     "no-nested-ternary": "off",
     "no-new-func": "error",
     "no-new-wrappers": "error",
@@ -134,7 +142,7 @@
     ],
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "error",
-    "no-throw-literal": "error",
+    "no-throw-literal": "off",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-underscore-dangle": "off",
@@ -168,6 +176,8 @@
       }
     ],
     "prefer-const": "error",
+    "prefer-object-spread": "error",
+    "radix": "error",
     "semi": [
       "error",
       "always"
@@ -188,6 +198,7 @@
       "error",
       "never"
     ],
+    "space-infix-ops": "error",
     "space-unary-ops": "error",
     "spaced-comment": [
       "error",

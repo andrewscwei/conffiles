@@ -97,6 +97,10 @@
     ],
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
@@ -117,6 +121,18 @@
         "path": "always",
         "types": "prefer-import",
         "lib": "always"
+      }
+    ],
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true,
+        "overrides": {
+          "arrow": {
+            "before": true
+          }
+        }
       }
     ],
     "@typescript-eslint/unified-signatures": "error",
@@ -226,7 +242,10 @@
     "no-lonely-if": "error",
     "no-mixed-spaces-and-tabs": "error",
     "no-multi-spaces": "error",
-    "no-multiple-empty-lines": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      { "max": 1 }
+    ],
     "no-nested-ternary": "off",
     "no-new-func": "error",
     "no-new-wrappers": "error",
@@ -241,7 +260,7 @@
     ],
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "error",
-    "no-throw-literal": "error",
+    "no-throw-literal": "off",
     "no-trailing-spaces": "error",
     "no-undef-init": "error",
     "no-underscore-dangle": "off",
@@ -257,10 +276,7 @@
       "error",
       "beside"
     ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
+    "object-curly-spacing": "off",
     "object-shorthand": "error",
     "one-var": [
       "error",
@@ -294,6 +310,7 @@
       "error",
       "never"
     ],
+    "space-infix-ops": "error",
     "space-unary-ops": "error",
     "spaced-comment": [
       "error",
