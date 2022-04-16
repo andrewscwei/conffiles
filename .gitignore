@@ -71,9 +71,13 @@ secrets.json
 
 # Databases
 .mongodb
+.db
 *.sql
 *.sqlite
 dump.rdb
+
+# Python
+__pycache__
 
 # Node
 ## NPM
