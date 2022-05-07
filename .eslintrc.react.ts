@@ -87,7 +87,7 @@
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-misused-new": "error",
-    "@typescript-eslint/no-namespace": "error",
+    "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-this-alias": "error",
@@ -247,7 +247,7 @@
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": [
       "error",
-      { "max": 1 }
+      { "max": 1, "maxEOF": 0, "maxBOF": 0 }
     ],
     "no-nested-ternary": "off",
     "no-new-func": "error",
