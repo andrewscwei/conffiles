@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": true,
     "lib": ["es6"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./build",
@@ -30,6 +30,7 @@
   ],
   "exclude": [
     "**/*.spec.ts",
+    "**/*.test.ts",
     "node_modules",
     "build",
     "tests"

@@ -86,7 +86,7 @@
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/no-parameter-properties": "off",
-    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/no-redeclare": "off",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -225,7 +225,10 @@
     "no-bitwise": "off",
     "no-caller": "error",
     "no-cond-assign": "warn",
-    "no-console": "warn",
+    "no-console": [
+      "warn",
+      { "allow": ["warn", "error"] }
+    ],
     "no-debugger": "error",
     "no-duplicate-case": "error",
     "no-duplicate-imports": "error",

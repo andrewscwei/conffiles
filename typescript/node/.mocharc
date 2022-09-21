@@ -1,0 +1,16 @@
+{
+  "bail": false,
+  "color": true,
+  "diff": true,
+  "exit": true,
+  "ignore": [
+  ],
+  "node-option": [
+    "experimental-specifier-resolution=node"
+  ],
+  "full-trace": true,
+  "recursive": true,
+  "reporter": "spec",
+  "require": "ts-node/register",
+  "timeout": 10000
+}

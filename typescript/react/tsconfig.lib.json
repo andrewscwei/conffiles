@@ -3,7 +3,7 @@
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "diagnostics": true,
+    "diagnostics": false,
     "downlevelIteration": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
@@ -33,6 +33,8 @@
   "exclude": [
     "**/*.spec.ts",
     "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
     "node_modules",
     "build",
     "tests"
