@@ -199,6 +199,7 @@
       }
     ],
     "@typescript-eslint/space-infix-ops": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
       {
@@ -258,8 +259,9 @@
     ],
     "capitalized-comments": [
       "warn",
+      "always",
       {
-        "ignoreInlineComments": true
+        "ignoreConsecutiveComments": true
       }
     ],
     "comma-dangle": "off",
