@@ -6,20 +6,38 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:svelte/recommended"
+  ],
+  "ignorePatterns": [
+    "*.config.ts",
+    "scripts/*.ts"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.svelte"
+      ],
+      "parser": "svelte-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+      }
+    }
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "extraFileExtensions": [
+      ".svelte"
+    ],
+    "project": "tsconfig.json",
+    "sourceType": "module"
   },
   "plugins": [
     "@typescript-eslint"
   ],
   "root": true,
   "rules": {
+    "svelte/no-at-html-tags": "off",
     "@typescript-eslint/array-type": [
       "error",
       {
@@ -528,10 +546,5 @@
       "error",
       "before"
     ]
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }
