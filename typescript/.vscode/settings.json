@@ -1,8 +1,5 @@
 {
   "files.trimFinalNewlines": true,
-  "files.exclude": {
-    ".wrangler/": true,
-  },
   "typescript.format.semicolons": "remove",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,

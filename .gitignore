@@ -176,6 +176,9 @@ _site
 # Ruby
 .ruby-version
 
+# CloudFlare
+.wrangler
+
 # Ignores
 !.keep
 !.gitkeep
