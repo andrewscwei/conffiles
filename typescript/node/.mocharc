@@ -1,16 +1,16 @@
 {
-  "bail": false,
+  "bail": true,
   "color": true,
   "diff": true,
   "exit": true,
-  "ignore": [
-  ],
-  "node-option": [
-    "experimental-specifier-resolution=node"
+  "extension": [
+    "spec.ts",
+    "test.ts"
   ],
   "full-trace": true,
+  "import": "tsx/esm",
   "recursive": true,
   "reporter": "spec",
-  "require": "ts-node/register",
-  "timeout": 10000
+  "require": "dotenv/config",
+  "timeout": 30000
 }
