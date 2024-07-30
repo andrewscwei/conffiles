@@ -178,6 +178,7 @@ _site
 
 # CloudFlare
 .wrangler
+*.vars
 
 # Ignores
 !.keep
