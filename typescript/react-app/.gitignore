@@ -3,7 +3,10 @@
 .env.*
 
 # Secrets
-.key
+*.pem
+*.crt
+*.key
+*.p8
 
 # OS generated files
 .DS_Store

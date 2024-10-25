@@ -1,3 +1,7 @@
+# Dotenv
+.env
+.env.*
+
 # OS generated files
 Thumbs.db
 ehthumbs.db
@@ -59,13 +63,6 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
 # SOPS
 !*.enc
 
@@ -101,10 +98,11 @@ dump.rdb
 .yarn/install-state.gz
 .pnp.*
 
-# Keys
+# Secrets
 *.pem
 *.crt
 *.key
+*.p8
 
 # SonarQube
 .scannerwork/
